@@ -28,7 +28,8 @@ public class Dragon extends GameObject {
     }
 
     @Override
-    public void tick() { //For the dragon's hit box
+    //For the dragon's hit box
+    public void tick() { 
         if (dy < 5) {
             dy += 2;
         }
@@ -37,14 +38,15 @@ public class Dragon extends GameObject {
         checkWindowBorder();
     }
 
-    public void jump() {
+    //The 'falling' part of the dragon
+    public void jump() { 
         if (dy > 0) {
             dy = 0;
         }
         dy -= 15;
     }
 
-    private void checkWindowBorder() {
+    private void checkWindowBorder() { 
         if (this.x > Main.WIDTH) {
             this.x = Main.WIDTH;
         }
