@@ -31,6 +31,7 @@ public class Game extends JPanel implements ActionListener {
     private int highScore;
     public static boolean MUTE = false;
 
+    //input background game
     public Game() {
 
         proxyImage = new ProxyImage("/resource/Background3.jpeg");
@@ -44,10 +45,12 @@ public class Game extends JPanel implements ActionListener {
 
     }
 
+    //get score from game
     public int getScore() {
         return score;
     }
 
+    //calculate score
     public void setScore(int score) {
         this.score = score;
     }
@@ -67,6 +70,7 @@ public class Game extends JPanel implements ActionListener {
         repaint();
     }
 
+    //Show the word in game
     @Override
     public void paint(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
@@ -93,6 +97,7 @@ public class Game extends JPanel implements ActionListener {
         g.dispose();
     }
 
+    //to restart the game
     private void restartGame() {
         if (!isRunning) {
             this.isRunning = true;
@@ -102,6 +107,7 @@ public class Game extends JPanel implements ActionListener {
         }
     }
 
+    //to detect 
     private void endGame() {
         this.isRunning = false;
         if (this.tubeColumn.getPoints() > highScore) {
