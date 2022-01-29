@@ -1,5 +1,5 @@
 package module.view;
-
+//this part is the compile part from all
 import module.controller.Controller;
 import module.model.Dragon;
 import module.model.Tube;
@@ -55,6 +55,7 @@ public class Game extends JPanel implements ActionListener {
         this.score = score;
     }
 
+    //action while game running
     @Override
     public void actionPerformed(ActionEvent e) {
         Toolkit.getDefaultToolkit().sync();
@@ -107,7 +108,7 @@ public class Game extends JPanel implements ActionListener {
         }
     }
 
-    //to detect 
+    //to detect and change high score
     private void endGame() {
         this.isRunning = false;
         if (this.tubeColumn.getPoints() > highScore) {
@@ -118,6 +119,7 @@ public class Game extends JPanel implements ActionListener {
 
     }
 
+    //check collision
     private void checkColision() {
         Rectangle rectDragon = this.dragon.getBounds();
         Rectangle rectTube;
