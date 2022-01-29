@@ -1,7 +1,7 @@
 package module.model.proxy;
 
 import javax.swing.ImageIcon;
-
+//This part for input image
 public class RealImage implements IImage {
 
     private final String src;
