@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 
 public class Main {
+
     public static int WIDTH = 800;
     public static int HEIGHT = 600;
 
@@ -21,8 +22,7 @@ public class Main {
 
     }
 
-    //main class
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Game game = new Game();
 
         try {
@@ -33,9 +33,8 @@ public class Main {
         }
         java.awt.EventQueue.invokeLater(() -> {
 
-            Main main= new Main(WIDTH, HEIGHT, "Clicky Dragon", game);
+            Main main = new Main(WIDTH, HEIGHT, "Clicky Dragon", game);
 
         });
     }
 }
-
