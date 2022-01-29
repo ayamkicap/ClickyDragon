@@ -1,5 +1,5 @@
 package module.view;
-
+//this is the main part to run
 import java.awt.Dimension;
 import javax.swing.JFrame;
 
