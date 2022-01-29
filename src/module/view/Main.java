@@ -21,6 +21,7 @@ public class Main {
 
     }
 
+    //main class
     public static void main (String[] args) {
         Game game = new Game();
 
@@ -30,8 +31,6 @@ public class Main {
                 | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        // </editor-fold>
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
 
             Main main= new Main(WIDTH, HEIGHT, "Clicky Dragon", game);
