@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
 
-
+//Manage the image of the obstacle 
 public class Tube extends GameObject {
 
     private ProxyImage proxyImage;

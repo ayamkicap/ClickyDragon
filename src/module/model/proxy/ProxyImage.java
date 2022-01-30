@@ -2,6 +2,7 @@ package module.model.proxy;
 
 import javax.swing.ImageIcon;
 
+//This part is for input image 
 public class ProxyImage implements IImage {
 
     private final String src;

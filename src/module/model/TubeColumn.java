@@ -8,15 +8,17 @@ import java.util.List;
 import java.util.Random;
 
 public class TubeColumn {
-
+    //Declare base
     private int base = Main.HEIGHT - 60;
 
+    //Declare point, speed
     private List<Tube> tubes;
     private Random random;
     private int points = 0;
     private int speed = 5;
     private int changeSpeed = speed;
 
+    //Manage tube (randomeness)
     public TubeColumn() {
         tubes = new ArrayList<>();
         random = new Random();
@@ -41,6 +43,7 @@ public class TubeColumn {
 
     }
 
+    //Manage tube (obstacle)
     public void tick() {
 
         for (int i = 0; i < tubes.size(); i++) {
@@ -52,7 +55,8 @@ public class TubeColumn {
         }
         if (tubes.isEmpty()) {
             this.points += 1;
-            if (changeSpeed == points) {
+            //Increase the speed of the tube
+            if (changeSpeed == points) {  
                 this.speed += 1;
                 changeSpeed += 5;
                 System.out.println(speed);
@@ -62,7 +66,7 @@ public class TubeColumn {
         }
 
     }
-
+    //
     public void render(Graphics2D g, ImageObserver obs) {
         for (int i = 0; i < tubes.size(); i++) {
             tubes.get(i).render(g, obs);
@@ -78,11 +82,13 @@ public class TubeColumn {
         this.tubes = tubes;
     }
 
-    public int getPoints() {
+    //current point during the game
+    public int getPoints() {  
         return points;
     }
 
-    public void setPoints(int points) {
+    //Saved point(s) after the game end with new highscore
+    public void setPoints(int points) { 
         this.points = points;
     }
 
