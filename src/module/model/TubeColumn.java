@@ -2,7 +2,6 @@ package module.model;
 
 import module.view.Main;
 import java.awt.Graphics2D;
-
 import java.awt.image.ImageObserver;
 import java.util.ArrayList;
 import java.util.List;
