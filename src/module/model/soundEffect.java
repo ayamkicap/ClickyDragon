@@ -10,7 +10,7 @@ public class soundEffect {
          try {
             // Open an audio input stream.
             File soundFile = new File(
-                  "/Users/HP/Desktop/CS SEM 3/CAT/CLICKY DRAGON PROJECT/ClickyDragon/ClickyDragon/src/resource/sound2-inGame.wav");
+                  "/Users/User/OneDrive/Desktop/ClickyDragon/ClickyDragon/src/resource/sound2-inGame.wav");
 
             // URL
             AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
